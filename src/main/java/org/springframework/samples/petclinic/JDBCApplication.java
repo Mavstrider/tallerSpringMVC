@@ -2,7 +2,6 @@ package org.springframework.samples.petclinic;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -23,7 +22,7 @@ public class JDBCApplication {
 		Connection connection = null;
 		Statement statement = null;
 		try {
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/petclinic","root", "root");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/petclinic", "root", "");
 			if (connection != null)
 				System.out.println("Conexión establecida");
 			
